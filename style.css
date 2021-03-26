@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  font-family: "Euphoria Script", cursive;
+}
+
+div {
+  margin-top: 300px;
+  background-color: rgb(236, 217, 189);
+  border-radius: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 3.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+
+.rock {
+  font-size: 30px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.paper {
+  font-size: 30px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.scissors {
+  font-size: 30px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.your-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+p.choice {
+  margin-top: 10px;
+  font-size: 1.7rem;
+}

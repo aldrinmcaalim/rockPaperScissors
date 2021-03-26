@@ -26,19 +26,19 @@ scissorsButton.addEventListener("click", () => {
 // rock vs rock || paper vs paper || scissors vs scissors
 function compareChoices(user, computer) {
   if (
-    (user === "rock" && computer === "scissors") ||
-    (user === "paper" && computer === "rock") ||
-    (user === "scissors" && computer === "paper")
+    (user === "Rock" && computer === "Scissors") ||
+    (user === "Paper" && computer === "Rock") ||
+    (user === "Scissors" && computer === "Paper")
   ) {
-    displayChoice.textContent = `User: ${user} vs Computer: ${computer}... You win!`;
+    displayChoice.textContent = `${user} vs. ${computer}... You win!`;
   } else if (
-    (user === "rock" && computer === "paper") ||
-    (user === "paper" && computer === "scissors") ||
-    (user === "scissors" && computer === "rock")
+    (user === "Rock" && computer === "Paper") ||
+    (user === "Paper" && computer === "Scissors") ||
+    (user === "Scissors" && computer === "Rock")
   ) {
-    displayChoice.textContent = `User: ${user} vs Computer: ${computer}... You lose...`;
+    displayChoice.textContent = `${user} vs. ${computer}... You lose...`;
   } else {
-    displayChoice.textContent = `User: ${user} vs Computer: ${computer}... It's a tie!`;
+    displayChoice.textContent = `${user} vs. ${computer}... It's a tie!`;
   }
 }
 
@@ -46,11 +46,11 @@ function computerChoice() {
   let random = Math.floor(Math.random() * 3) + 1;
   let choice = "";
   if (random === 1) {
-    choice = "rock";
+    choice = "Rock";
   } else if (random === 2) {
-    choice = "paper";
+    choice = "Paper";
   } else {
-    choice = "scissors";
+    choice = "Scissors";
   }
   return choice;
 }
